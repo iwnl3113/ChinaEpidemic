@@ -1,0 +1,175 @@
+.active {
+  background-color: rgb(36, 138, 247);
+  color: #fff !important;
+}
+.test {
+  color: rgb(57, 44, 79);
+}
+.main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  .box {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    .detail {
+      position: absolute;
+      overflow: hidden;
+      top: -8vh;
+      width: 90vw;
+      height: 35vh;
+      background-color: #fff;
+      box-shadow: rgb(58, 58, 58) 0px 0px 20px 0px;
+      border-radius: 8px;
+    }
+  }
+  .img {
+    flex: 1;
+    overflow: hidden;
+    .title {
+      position: absolute;
+      z-index: 99;
+      b {
+        width: 10px;
+      }
+      h2,
+      h4 {
+        color: white;
+        margin-left: 20px;
+      }
+      h4 {
+        margin-top: 5px;
+      }
+    }
+    .tip {
+      width: 10px;
+      height: 40px;
+      background: rgb(255, 89, 12);
+    }
+    img {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 130%;
+      height: 200%;
+    }
+  }
+}
+.bottom {
+  flex: 1;
+  margin: 6vh 3vw;
+  h3 {
+    color: rgb(145, 19, 19);
+  }
+  h3:before {
+    content: "★";
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 60, 60);
+    font-weight: bold;
+  }
+  .map {
+  }
+  #map,
+  #map2 {
+    display: inline-block;
+    width: 100%;
+    height: 38vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  #map {
+    animation: to-right 1s;
+    position: relative;
+    left: 0%;
+  }
+  #map2 {
+    position: relative;
+    right: -100%;
+    animation: to-left 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes to-left {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0%;
+    }
+  }
+  @keyframes to-right {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  .btn-box {
+    display: flex;
+    justify-content: space-around;
+  }
+  .map-btn {
+    display: inline-block;
+    border: 1px solid rgb(194, 100, 100);
+    color: rgb(196, 39, 39);
+    border-radius: 5px;
+    padding: 5px 40px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .map-btn:hover {
+    border: 1px solid red;
+    color: red;
+  }
+}
+.box-top {
+  display: flex;
+  height: 13%;
+  .btn {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    color: rgb(47, 47, 47);
+  }
+}
+.box-main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80%;
+  .data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 33.3%;
+    height: 50%;
+    background-color: rgb(255, 253, 253);
+    > span {
+      text-align: center;
+    }
+  }
+  .data :nth-child(1) {
+    color: rgb(54, 51, 86);
+  }
+  .data :nth-child(2) {
+    color: rgb(255, 116, 61);
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+.list{
+  width: 100%;
+}
